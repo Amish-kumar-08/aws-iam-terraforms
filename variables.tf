@@ -1,0 +1,16 @@
+variable "aws_region" {
+  description = "AWS region"
+  type        = string
+  default     = "ap-south-1"
+}
+
+variable "iam_username" {
+  description = "Name of the IAM user"
+  type        = string
+  default     = "terraform-s3-reader-amish"
+}
+
+variable "s3_read_policy" {
+  description = "Custom S3 read-only IAM policy JSON"
+  type        = string
+}
